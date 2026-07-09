@@ -1,0 +1,91 @@
+:root {
+    --rose: #FCD2F2;
+    --fond: #ffe1d3;
+    --dore: #994000;
+    --terra: #ffce8e;
+    --texte: #333333; 
+}
+
+body {
+    background-color: var(--fond);
+    color: var(--texte); 
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    color: var(--terra);
+    text-align: center;
+    padding: 20px;
+}
+
+.article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+.carte{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    width: 300px;
+    border-left: 5px solid var(--terra);
+
+}
+
+.carte h2 {
+    color: var(--terra);
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.contenu {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.date{
+    font-size: 12px;
+    color: #999;
+    margin: 4px 0;
+}
+
+.categorie {
+    display: inline-block;
+    background-color: var(--rose);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.filtres {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.filtres button {
+    background-color: white;
+    color: var(--terra);
+    border: 2px solid var(--terra);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filtres button:hover {
+    background-color: var(--terra);
+    color: white;
+}
