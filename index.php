@@ -1,6 +1,14 @@
-<?php
+<?php  
 
-require 'config/database.php';
+require_once 'controllers/ArticleController.php';
+afficherArticles();
+
+?>
+
+
+
+<?php
+/*require 'config/database.php';
 
 $requete = "SELECT titre, contenu, dateCreation, dateModification, categorie.libelle 
             FROM article
@@ -22,7 +30,7 @@ $resultats = $stat->fetchAll(PDO::FETCH_ASSOC);
     </head>
     <body>
         <h1> Site d'informations de Rahmatulaah<3 </h1>
-        
+
             <div class="filtres">
                  <button onclick="filtrer('tous')">Tous</button>
                 <button onclick="filtrer('Sport')">Sport</button>
@@ -52,3 +60,5 @@ $resultats = $stat->fetchAll(PDO::FETCH_ASSOC);
         
     </body>
 </html>
+?>
+*/
